@@ -3,17 +3,26 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width= , initial-scale=1.0">
+    <meta name="viewport" content="width=device-width , initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/893e19f9a2.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./style.css">
-    <script src="./script.js"></script>
+    <script src="./script.js" defer></script>
     <title>AutoComplete</title>
 </head>
 
 <body>
     <div class="container">
-        <input placeholder="Search anything here...." />
-        <button>Search</button>
+        <div class="search">
+            <input type="text" id="input-box" placeholder="Search anything here...." autocomplete="off" />
+            <button><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        <div class="result-box">
+            <ul>
+            </ul>
+        </div>
     </div>
+
+
 </body>
 
 </html>
